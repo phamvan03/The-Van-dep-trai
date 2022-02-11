@@ -1,0 +1,362 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+}
+#header {
+  height: 46px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#nav {
+  display: inline-block;
+}
+#nav > li {
+  display: inline-block;
+}
+#nav li {
+  text-transform: uppercase;
+  position: relative;
+  list-style-type: none;
+}
+#nav li a {
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 24px;
+  display: block;
+  color: #fff;
+}
+#nav .subnav a {
+  color: #000;
+}
+#nav li:hover .subnav {
+  display: block;
+  color: black !important;
+  background-color: #fff;
+}
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+  color: #000;
+  background-color: #ccc;
+}
+#nav .subnav {
+  min-width: 180px;
+  position: absolute;
+  top: 100%;
+  color: #000;
+  background-color: #fff;
+  padding: 0;
+  display: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav .nav-icon {
+  position: relative;
+  bottom: 3px;
+  left: 2px;
+}
+#header .search-but {
+  float: right;
+  line-height: 46px;
+  font-size: 20px;
+}
+#header .search-icon {
+  color: #fff;
+  font-size: 20px;
+  padding: 0 21px;
+}
+#header .search-but:hover {
+  background-color: #f44336 !important;
+}
+#slide {
+  min-height: 150px;
+  /* background-color: black; */
+  margin-top: 46px;
+}
+#main {
+}
+#main .title {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  text-align: center;
+}
+#main .title > h1 {
+  text-transform: uppercase;
+  line-height: 20px;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 4px;
+  margin-top: 50px;
+}
+#main .title > p {
+  padding: 40px 0;
+  font-style: italic;
+}
+#main .content-main > p {
+  text-align: justify;
+  box-sizing: border-box;
+}
+#main .content-main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+#main .product {
+  width: 200px;
+  float: left;
+  padding: 30px 30px;
+  margin-left: 50px;
+}
+#main .product > img {
+  width: 154px;
+  height: 154px;
+  border-radius: 4px;
+}
+#main .product > p {
+  text-align: center;
+  padding-bottom: 8px;
+}
+.tour {
+  background-color: #000;
+  max-width: 100%;
+  margin-top: 250px;
+}
+.tour .tour-title {
+  color: #fff;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.tour .tour-title > h1 {
+  text-transform: uppercase;
+  padding: 20px 0;
+  font-size: 30px;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+.tour .tour-date {
+  color: #757575 !important;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.tour .tour-date > ul {
+  padding: 0;
+  margin: 0;
+}
+.tour .dates > li {
+  list-style-type: none;
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+}
+.tour .soldout {
+  padding: 3px 9px;
+  display: inline-block;
+  color: #fff;
+  background-color: #f44336 !important;
+}
+.tour .soldout {
+  padding: 3px 9px;
+  display: inline-block;
+  color: #fff;
+  background-color: red;
+  margin-left: 12px;
+}
+.tour .tour-pro {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.tour-pro .place {
+  width: 33.33333%;
+  float: left;
+  padding: 0 8px;
+  margin-bottom: 100px;
+}
+/* .clear{
+    clear: both;
+} */
+/* .tour-pro::after {
+    content: "";
+    clear: both;
+    display: table;
+} */
+.tour-pro .place > img {
+  width: 100%;
+  vertical-align: middle;
+}
+.tour-pro .content-tour {
+  color: #000;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 25px 16px 0;
+  text-align: start;
+}
+.tour-pro .content-tour > p {
+  padding: 10px 0;
+}
+.tour-pro .opacity {
+  opacity: 0.6;
+}
+.tour-pro .ticket {
+  margin: 20px 0 10px;
+  background-color: #000;
+  color: #fff;
+  padding: 8px;
+}
+.contact .address {
+  width: 49%;
+  float: left;
+}
+.address .contact-infor {
+  list-style-type: none;
+  padding: 5px 190px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.contact .infor {
+  width: 32%;
+  float: left;
+}
+.contact .infor-input {
+  width: 100%;
+  padding: 10px 0px;
+  border: 1px solid #ccc !important;
+}
+.contact .information {
+  float: left;
+  padding: 10px 0;
+  margin-right: 15px;
+}
+.contact .infor-sent {
+  margin-top: 13px;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 7px 12px;
+  float: right;
+  box-sizing: inherit;
+  cursor: pointer;
+}
+#footer::before {
+  content: "";
+  clear: both;
+  display: table;
+}
+#footer {
+}
+#footer .end-img {
+  margin-top: 100px;
+}
+#footer .end {
+  text-align: center;
+  margin: 60px 0;
+}
+#footer .end > a {
+  padding-top: 5px;
+  text-decoration: none;
+  display: block;
+  color: #000;
+}
+#footer .end > a:hover {
+  color: blue;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.header-modal {
+  color: #fff;
+  padding: 45px 16px;
+  background-color: #009688;
+}
+.modal-body {
+  padding: 0 16px;
+}
+.modal-content {
+  width: 900px;
+  background-color: #fff;
+  position: relative;
+}
+.fa-suitcase {
+  font-size: 30px;
+}
+.title-modal {
+  font-weight: 400;
+  letter-spacing: 4px;
+  font: 14px;
+  font-size: 30px;
+  text-align: center;
+}
+.content-body-modal {
+  display: block;
+  margin: 15px 0;
+}
+.input-modal {
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 9px;
+}
+.pay-modal {
+  background-color: #009688;
+  border: none;
+  color: #fff;
+  padding: 16px;
+  margin: 16px 0;
+  width: 100%;
+  display: block;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+.pay-modal:hover {
+  opacity: 1;
+}
+.modal-need {
+  text-align: right;
+  position: relative;
+  bottom: 30px;
+}
+.modal-need > a {
+  color: #2196f3;
+}
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 12px 16px;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.modal-close:hover {
+  opacity: 1;
+  background-color: #ccc;
+  color: #000;
+}
+.butt-colse {
+  color: #fff;
+  background-color: #f44336;
+  border: none;
+  padding: 8px 16px;
+  position: relative;
+  top: 10px;
+}
